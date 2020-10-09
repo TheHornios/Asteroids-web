@@ -1,0 +1,1765 @@
+body{background-color:black ;
+    user-select: none;
+    overflow-x:hidden;
+}
+#index{
+    overflow-y:hidden;
+}
+#MyCanvas{
+    display: block;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.5;
+}
+body#reves{background-color:#F5F5F5;
+    user-select: none;
+    overflow-x:hidden;
+}
+#logo2{
+    height: 180px;
+    position: relative;
+    margin:0px auto;
+    width:fit-content ;
+}
+html#juego{overflow: hidden}
+
+@font-face {
+    font-family: "Hyperspace";
+    src: url("fonts/una/Hyperspace Bold.otf");
+    
+}
+@font-face {
+    font-family: "Hyperspace_Blod";
+    src: url("fonts/dos/zrnic___.ttf");
+}
+
+h1 {font-family:"Hyperspace";
+    color: white;
+    font-size: 6em;
+    margin-top: 0;
+    text-align: center;
+}
+p#text1{
+    font-family:"Hyperspace";
+    color: yellow;
+    font-size: 2.5em;
+    margin-top: 6%;
+    position:absolute;
+    bottom: -30px;
+    right:-150px;
+    transform: rotate(-25deg);
+}
+div#jugar{
+    color: white;
+    font-family:"Hyperspace";
+    font-size: 2em;
+    text-align: center;
+    position: relative;
+    margin-bottom:50px;
+    
+}
+
+div#ronri{
+    color: white;
+    font-family:"Hyperspace";
+    font-size: 1em;
+    
+    position: relative;
+}
+span#versionSp{
+    float: right;
+}
+
+h3{font-family:"Hyperspace";
+    color: white;
+    font-size: 1.7em;
+    display: block;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+label{
+    font-family:"Hyperspace_Blod";
+    color: white;
+}
+
+div.login{
+    width: 300px;
+    height: 450px;
+    border: 1px solid white;
+    border-top-right-radius: 15%;
+    border-top-left-radius: 15%;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    top: 25%;
+    left: 5%;
+    position: absolute;
+    box-sizing: border-box;
+    padding:  70px 30px;
+   
+}
+footer{
+    position:absolute; bottom:3px; width:99%; 
+}
+img#logo{
+    cursor: pointer;
+    margin: 100px;
+    padding: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -60%;
+    left: -34%;
+}
+div.login label{
+    display: block;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+div.login input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+div.login input[type="text"],div.login input[type="password"]{
+    font-family:"Hyperspace_Blod";
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    
+}
+a{
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 20px;
+    color: darkgray;
+    font-family:"Hyperspace_Blod";  
+    display: block;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+a:hover{
+    color: white;
+}
+div#login input[type="submit"]{
+    font-family:"Hyperspace_Blod";
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color: yellow;
+    color: black;
+    font-size: 20px;
+    border-radius: 20px;
+    transition: all .35s ease-in-out ;
+}
+body#reves h1{
+    font-family:"Hyperspace_Blod";
+    color: black;
+    font-size: 3em;
+    margin-top: 5%;
+    text-align: center;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+body#reves a{
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 20px;
+    color: #717171;
+    font-family:"Hyperspace_Blod";  
+    display: block;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+body#reves a:hover{
+    color:black;
+    
+}
+body#reves input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+body#reves input.cont{
+    font-family:"Hyperspace_Blod";
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 16px;
+}
+body#reves label{
+    display: block;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+body#reves input[type="submit"]{
+    font-family:"Hyperspace_Blod";
+    border: none;
+    outline: none;
+    height: 40px;
+    background: yellow;
+    color: black;
+    font-size: 20px;
+    border-radius: 20px;
+}
+body#reves h2{
+    font-family:"Hyperspace_Blod";
+    color: #717171;
+    font-size: 1em;
+    margin-bottom: 10px;
+    padding: 0px;
+    
+}
+
+body#reves div#Cabecera{
+    position: relative;
+    left: -300px;
+    opacity: 0;
+}
+body#reves div#cuerpo{
+    
+    position: relative;
+    left: 360px;
+    opacity: 0;
+}
+body#reves div#error a{
+    display: inline;
+    font-size: 0.85em;
+    color:black;
+    text-decoration:underline ;
+}
+body#reves div#error{
+    font-family:"Hyperspace_Blod";
+    font-size: 1em;
+    color:red;
+    padding-left:3%;
+    border-left: solid 4px red ;
+    margin-bottom: 10px;
+    background: darkgray;
+}
+body#reves div#error div{
+    font-family:"Hyperspace_Blod";
+    font-size: 0.85em;
+    color:black;
+    margin-left:10% ;
+}
+
+/* 
+        Esta Bien Apartir De Aqui
+            Menu De El Index
+*/
+div.haIniciadoSesion{
+    
+    font-family:"Hyperspace";
+    color: white;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+}
+div.haIniciadoSesion img.logo{
+    border: 5px solid transparent;
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: block;
+    margin:auto;
+}
+div.haIniciadoSesion h2.Usuario{
+    color:yellow;
+    font-size: 2em;
+    text-align: center;
+}
+div.haIniciadoSesion div.itemMenu img{
+    display: block;
+}
+div.haIniciadoSesion  div.itemMenu{
+    padding-left: 15px;
+    margin-top: 20px;
+}
+.itemMenu{
+    display: flex;
+}
+.textoMenuItem{
+    display: block;
+    line-height: 38px;
+    margin-left: 10px;
+
+}
+#botones{
+    width: 100%;
+}
+.lineaFormulario{
+    width: 80%;
+    margin:30px auto;
+    position: relative;
+    padding:0;
+}
+#logoClick{
+    transition: all 0.10s ease-in-out;
+}
+#divDeLaImganDeLogo{
+    margin-bottom:20px;
+}
+.lineaFormulario label{
+    position: absolute;
+    top:5px;
+    left:20px;
+    color:black;
+    line-height: 20px;
+    display: block;
+    padding:5px;
+    pointer-events: none;
+    transition: all .35s ease-in-out;
+}
+.lineaFormulario input:focus ~ label,.lineaFormulario input:valid ~ label{
+    background: yellow;
+    transform: translate(-12px,-27px);
+}
+.lineaFormulario input{
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+}
+.lineaFormulario input[type="submit"]:hover{
+    background-color: #fff !important;
+}
+.lineaFormulario a{
+    display: block;
+    margin:0;
+    padding:0;
+    color: white;
+    transition: all .25s ease-in-out;
+    font-weight: 300;
+}
+.lineaFormulario a:hover{
+    color:darkgray;
+}
+.textoPrin{
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+}
+.menuBotones{
+    overflow: hidden;
+    list-style: none;
+    color:white;
+    font-family:"Hyperspace";
+    text-align: center;
+    font-size: 2em;
+    padding: 0;
+    position: relative;
+    top:60%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.menuBotones li{
+    position: relative;
+    transition: all 0.25s ease-out;
+}
+.menuBotones li:hover{
+    letter-spacing: 10px;
+}
+.menuBotones span{
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menuBotones span:after{
+    content:'';
+    background-color: white;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.25s ease-out;
+    transform-origin: center;
+    transform: scaleX(0);
+}
+.menuBotones span:hover:after{
+    transform: scaleX(1);
+}
+.blokear_Boton span:after{
+    content:'';
+    background-color: transparent;
+}
+
+
+#alterarMenuBoton{
+    display: none;
+    z-index: 374568;
+    cursor: pointer;
+}
+.blanco_arr{
+    background-color: white;
+    height: 10px;
+    width: 50px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    transition: .25s all ease-in;
+}
+.blanco_bot{
+    background-color: white;
+    height: 10px;
+    width: 50px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    transition: .25s all ease-in;
+}
+.borrar_barra{
+    background-color: white;
+    height: 10px;
+    width: 50px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    transition: .25s all ease-in;
+}
+@media (max-width:1350px){
+    .chat,.chat_fondo{
+        display: none;
+    }
+}
+@media (max-width:990px){
+    #alterarMenuBoton{
+        margin-left: 20px;
+        display: block;
+        position: absolute;
+        top: 15px;
+        left: 5px;
+        padding-top: 10px;
+    }
+    .textoPrin h1{
+        font-size: 4em;
+    }
+    #text1{
+        font-size: 2em !important;
+    }
+    .filtro{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top:0;
+        left: 0;
+        opacity: 0;
+        background-color: black;
+        transition: 0.25s all;
+        z-index: 10;
+    }
+    #menuDesap{
+        display:none;
+        position: fixed;
+        z-index: 99999;
+        font-size: 0.9em;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: black;
+    }
+    .mostrar {
+        animation: normal 0.25s mostrarMenu;
+    }
+    @keyframes mostrarMenu {
+        from{
+            transform: translateX(-100%);
+        }
+        to{
+            transform: translateX(0%);
+        }
+    }
+    .ocultar {
+        animation: normal 0.25s ocultarMenu;
+    }
+    @keyframes ocultarMenu {
+        from{
+            transform: translateX(0%);
+        }
+        to{
+            transform: translateX(-100%);
+        }
+    }
+    .menuBotones li:hover{
+        letter-spacing: 2px;
+    }
+    
+
+    
+}
+/* /---------------------/
+      Html Puntuaciones
+   /---------------------/
+*/
+/*Cabecera*/
+.pts .container-fluid,.logros .container-fluid{
+    height: 96%;
+    width: 96%;
+    margin:  2%;
+}
+.pts *,.logros *{
+    margin: 0 auto;
+    padding: 0;
+    font-family:"Hyperspace";
+}
+.pts .Head_PTS,.logros .Head_PTS{
+    width: fit-content;
+    margin: 0 ;
+    position: relative;
+}
+.pts .Head_PTS_Puntuaciones,.logros .Head_PTS_Puntuaciones{
+    width: fit-content;
+    margin: 0 auto ;
+    position: relative;
+}
+.pts .Head_PTS_Puntuaciones h1,.logros .Head_PTS_Puntuaciones h1{
+    font-family:"Hyperspace";
+    color: white;
+    font-size: 3.5em;
+    margin-top: 0;
+    text-align: left;
+}
+.pts .Head_PTS h1,.logros .Head_PTS h1{
+    cursor: pointer;
+    font-family:"Hyperspace";
+    color: white;
+    font-size: 2.5em;
+    margin-top: 0;
+    text-align: left;
+}
+.pts .Inicio_Sesion,.logros .Inicio_Sesion{
+    float: right;
+    
+}
+.pts .Inicio_Sesion img.logo,.logros .Inicio_Sesion img.logo{
+    border-radius: 50%;
+    display: inline;
+    height: 100px;
+    width: 100px;
+}
+.Inicio_Sesion  .itemMenuMonedas *{
+    display: inline;
+}
+.Inicio_Sesion  .itemMenuMonedas{
+    display: inline-block;
+    color: white;
+    position: absolute;
+    top: 60px;
+    right: 100px;
+}
+.pts .Inicio_Sesion .Usuario,.logros .Inicio_Sesion .Usuario{
+    color:yellow;
+    font-size: 2em;
+    text-align: right;
+    display: inline;
+}
+/*Tabla*/
+.table-wrapper{
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+    width: 100%;
+    overflow-y: auto;
+    overflow-x:hidden;
+}
+.fl-table {
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    white-space: nowrap;
+    color: #ffffff;
+    background-color: #181818;
+}
+
+.fl-table td, .fl-table th {
+    
+    text-align: center;
+    padding: 10px;
+}
+
+.fl-table td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 16px;
+}
+
+.fl-table thead th {
+    color: #ffffff;
+    background: #181818;
+}
+
+.fl-table th#primerTh{
+    border-left: 1px solid black;
+}
+.fl-table th{
+    /*border-top: 1px solid #f8f8f8;*/
+    border-left: 1px solid #f8f8f8;
+  
+}
+.fl-table thead th:nth-child(odd) {
+    color: #ffffff;
+}
+
+.fl-table tr:nth-child(even) {
+    color: #ffffff;
+    background: #1F2125;
+}
+.table-wrapper::-webkit-scrollbar {
+    cursor: pointer;
+    width: 10px;
+    margin-left: 2px;
+}
+.table-wrapper::-webkit-scrollbar-track {
+    cursor: pointer;
+    background: black;
+}
+.table-wrapper::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background: white;
+    border-radius: 10px;
+}
+.table-wrapper::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+    background: lightgray;
+    border-radius: 10px;
+  }
+/*Botones Pts*/
+.menuBotones_Pts{
+    list-style: none;
+    color:white;
+    font-family:"Hyperspace";
+    text-align: center;
+    font-size: 1.5em;
+    padding: 0;
+    top:50%;
+    left:50%;
+   /* transform: translate(-50%,-50%);*/
+}
+.menuBotones_Pts li{
+    position: relative;
+    transition: all 0.25s ease-out;
+}
+.menuBotones_Pts li:hover{
+    letter-spacing: 5px;
+}
+.menuBotones_Pts span{
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menuBotones_Pts span:after{
+    content:'';
+    background-color: white;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.25s ease-out;
+    transform-origin: center;
+    transform: scaleX(0);
+}
+.menuBotones_Pts span:hover:after{
+    transform: scaleX(1);
+}
+.formalrioPartidas{
+    display: none;
+}
+.pts #head span{
+    position: relative;
+    transition: all 0.25s ease-out;
+}
+.pts #head span:hover{
+    letter-spacing: 5px;
+}
+.pts #head span:after{
+    content:'';
+    background-color: white;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.25s ease-out;
+    transform-origin: center;
+    transform: scaleX(0);
+}
+.pts #head span:hover:after{
+    transform: scaleX(1);
+}
+
+/* /---------------------/
+      Html SKINS
+   /---------------------/
+*/
+/*Cabecera*/
+.skins .container-fluid{
+    height: 96%;
+    width: 96%;
+    margin:  2%;
+}
+.skins *{
+    margin: 0 auto;
+    padding: 0;
+    font-family:"Hyperspace";
+}
+.skins .Head_PTS{
+    width: fit-content;
+    margin: 0 ;
+    position: relative;
+}
+.skins .Head_PTS_Puntuaciones{
+    width: fit-content;
+    margin: 0 auto ;
+    position: relative;
+}
+.skins .Head_PTS_Puntuaciones h1{
+    font-family:"Hyperspace";
+    color: white;
+    font-size: 3.5em;
+    margin-top: 0;
+    text-align: left;
+}
+.skins .Head_PTS h1{
+    cursor: pointer;
+    font-family:"Hyperspace";
+    color: white;
+    font-size: 2.5em;
+    margin-top: 0;
+    text-align: left;
+}
+.skins .Inicio_Sesion{
+    float: right;
+    
+}
+.skins .Inicio_Sesion img.logo{
+    border-radius: 50%;
+    display: inline;
+    height: 100px;
+    width: 100px;
+}
+.skins .Inicio_Sesion .Usuario{
+    color:yellow;
+    font-size: 2em;
+    text-align: right;
+    display: inline;
+}
+.skins #head span{
+    position: relative;
+    transition: all 0.25s ease-out;
+}
+.skins #head span:hover{
+    letter-spacing: 5px;
+}
+.skins #head span:after{
+    content:'';
+    background-color: white;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.25s ease-out;
+    transform-origin: center;
+    transform: scaleX(0);
+}
+.skins #head span:hover:after{
+    transform: scaleX(1);
+}
+/*Cuerpo*/
+
+.skins #div_nave{
+    width: 100%;
+    height: 70vh;
+    max-width: 100%;
+    max-height: 70vh;
+}
+.skins #div_asteroides{
+    width: 100%;
+    height: 70vh;
+    max-width: 100%;
+    max-height: 70vh;
+}
+.skins .cuepo h2{
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    border: 1px white solid;
+    border-radius: 25px;
+}
+.skins #item_menu{
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+    border: 1px white solid;
+    transition: all 0.25s;
+}
+#Check{
+    position: absolute;
+    text-align: right;
+    top:40px;
+    margin-left: 5px ;
+}
+.comprarSkinFondo{
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    border-radius: 15px;
+    opacity: 0.70;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.comprarSkin{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    color: white;
+    display: inline-block;
+    position: absolute;
+    top:10px;
+    left: 10px;
+}
+/* /---------------------/
+      Html Guia
+   /---------------------/
+*/
+/*Cabecera*/
+.guia .container-fluid{
+    height: 96%;
+    width: 96%;
+    margin:  2%;
+}
+.guia *{
+    margin: 0 auto;
+    padding: 0;
+    font-family:"Hyperspace";
+}
+.guia .Head_PTS{
+    width: fit-content;
+    margin: 0 ;
+    position: relative;
+}
+.guia h1{
+    width: fit-content;
+    margin: 0 auto;
+    position: relative; 
+    font-family:"Hyperspace";
+    color: white;
+    font-size: 3.5em;
+    margin-top: 0;
+    text-align: left;
+}
+.guia .Head_PTS h1{
+    cursor: pointer;
+    font-family:"Hyperspace";
+    color: white;
+    font-size: 2.5em;
+    margin-top: 0;
+    text-align: left;
+}
+
+#head span{
+    position: relative;
+    transition: all 0.25s ease-out;
+}
+#head span:hover{
+    letter-spacing: 5px;
+}
+#head span:after{
+    content:'';
+    background-color: white;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.25s ease-out;
+    transform-origin: center;
+    transform: scaleX(0);
+}
+#head span:hover:after{
+    transform: scaleX(1);
+}
+
+.guia #Guia{
+    
+    border: 1px white solid;
+    
+    
+    border-top-left-radius: 25px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 5px;
+    width: 100%;
+    height: 70vh;
+    max-width: 100%;
+    max-height: 70vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.guia #Notas{
+    width: 100%;
+    height: 70vh;
+    max-width: 100%;
+    max-height: 70vh;
+}
+.guia .cuepo h2{
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    border-bottom: 1px white solid;
+    color:yellow;
+}
+.borde{
+    color: white;
+    font-family:"Hyperspace";
+    color: white;
+}
+.guia .cuepo div#Notas{
+    color: white;
+    border: 1px white solid;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 5px;
+    font-family:"Hyperspace";
+    color: white;
+
+    overflow-y: auto;
+}
+.guia p{
+    display: block;
+}
+.guia h3{
+    display: block;
+    margin: 0 auto;
+}
+.guia ul,li{
+    margin-left: 15px;
+    margin-right: 5px;
+    width: 100%;
+    list-style: none;
+}
+.guia li img{
+    margin-right: 5px;
+}
+.guia .imagenes{
+    float: right;
+}
+.amarillo{
+    color: yellow;
+}
+#remarcar{
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    background-color: #181818;
+}
+#texto{
+    font-family:"Hyperspace";
+    color: white;
+    margin: 10px;
+    text-align: left;
+    padding-inline-start: 0px;
+}
+#sublista{
+    margin: 5px;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 0.75em;
+}
+.guia  li{
+    margin-top: 10px;
+    background-color: #1F2125;
+    padding: 5px;
+    border-radius: 15px;
+}
+/*Scroll*/
+#Guia::-webkit-scrollbar {
+    cursor: pointer;
+    width: 10px;
+    
+
+}
+#Guia::-webkit-scrollbar-track {
+    cursor: pointer;
+    background: transparent;
+}
+#Guia::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background: white;
+    border-radius: 10px;
+}
+#Guia::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+    background: lightgray;
+    border-radius: 10px;
+  }
+#remarcarCentro{
+    text-align: Center;
+}
+
+/* chat */
+.minimizar_Chat {
+    animation: normal 0.25s minimizarChat;
+}
+@keyframes minimizarChat {
+    from{
+        bottom:0;
+    }
+    to{
+        bottom:-35vh;
+    }
+}
+.aumentar_Chat {
+    animation: normal 0.25s aumentarChat;
+}
+@keyframes aumentarChat {
+    from{
+        bottom:-35vh;
+    }
+    to{
+        bottom:0;
+    }
+}
+.chat_fondo{
+    position: absolute;
+    background-color: black;
+    opacity: 0.7;
+    border: 2px solid #717171;
+    bottom:0;
+    right: 5%;
+    height: 40vh;
+    width: 20%;
+    border-radius: 15px;
+}
+.chat{
+    position: absolute;
+    background-color: transparent;
+    bottom:0;
+    right: 5%;
+    height: 40vh;
+    width: 20%;
+    border-radius: 15px;
+}
+.chat *{
+    display: inline-block;
+}
+.chat .cabecera{
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    background-color: white;
+    text-align: center;
+    display: block;
+}
+.chat h2{
+    font-family:"Hyperspace";
+    position: relative;
+}
+
+.chat .tresBarras{
+    position: relative;
+    left: -23%;
+    transition: all ease-out 0.25s;
+    cursor: pointer;
+}
+.chat .tresBarras:hover div{
+    background-color: grey;
+}
+.chat .minimizar{
+    cursor: pointer;
+    position: relative;
+    right: -23%;
+}
+.chat .tresBarras div{
+    display: block;
+    height:3px;
+    border-radius: 10px;
+    width: 20px;
+    margin:2px;
+    margin-left: 10px;
+    background-color: black;
+}
+.chat .tresBarras div.barr1Cent{
+    transform: rotate(-40deg);
+    margin-left: 8px;
+    width: 15px;
+}
+.chat .tresBarras div.barr3Baj{
+    transform: rotate(40deg);
+    margin-left: 8px;
+    width: 15px;
+}
+.chat .tresBarras div.barr2Arr{
+    margin-left: 8px;
+    width: 20px;
+}
+.chat .minimizar:hover div {
+    background-color: grey;
+}
+.chat .minimizar div{
+    display: inline-block;
+    height:4px;
+    border-radius: 10px;
+    width: 15px;
+    background-color: black;
+}
+.chat .minimizar .barr1{
+    display: inline-block;
+    transform: rotate(+35deg);
+    margin: 0;
+    margin-bottom: 20%;
+    transition: all ease-out 0.25s;
+}
+.chat .minimizar .barr2{
+    display: inline-block;
+    transform: rotate(-35deg);
+    margin: 0;
+    margin-bottom: 20%;
+    position: relative;
+    left: -25%;
+    transition: all ease-out 0.25s;
+}
+.Buscar_Amigos{
+    position: relative;
+    display: block;
+    background: #434953;
+    height: 33px;
+    text-align: right;
+}
+.Buscar_Amigos *{
+    margin: 2px;
+    margin-right: 10px;
+    
+}
+.Buscar_Amigos span{
+    position: relative;
+    font-family:"Hyperspace";
+    color: white;
+    margin-right:55%;
+    text-align: left;
+}
+#add{
+    cursor: pointer;
+    position: relative;
+    margin: 4px;
+    margin-left: 0;
+}
+#buscar{
+    cursor: pointer;
+    position: relative;
+    margin: 2px;
+    margin-left: 0;
+    
+    right: 10px;
+}
+#amigos_add{
+    
+    margin: 2px;
+    margin-left: 0;
+    position: absolute;
+    top: 4px;
+   
+    right: 35px;
+    display: inline;
+    font-family:"Hyperspace_Blod";
+    font-size: 0.75em;
+    background:#434953;
+    border: #434953;
+    transition: all ease-out 0.25s;
+    color: white;
+    width: 60%;
+}
+.aumentarInput_amigos_add {
+    animation: normal 0.25s aumentarInput;
+}
+@keyframes aumentarInput {
+    from{
+        width: 60%;
+    }
+    to{
+        width: 85%;
+    }
+}
+.disminuirInput_amigos_add {
+    animation: normal 0.25s disminuirInput;
+}
+@keyframes disminuirInput {
+    from{
+        width: 85%;
+    }
+    to{
+        width: 60%;
+    }
+}
+.ocultar_amigos_add {
+    animation: normal 0.25s ocultaramigos_Menu;
+}
+@keyframes ocultaramigos_Menu {
+    from{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    to{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+.desocultar_amigos_add {
+    animation: normal 0.25s desocultaramigosMenu;
+}
+@keyframes desocultaramigosMenu {
+    from{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+.cuerpo_chat{
+    overflow-y: auto;
+}
+#notificacion{
+    opacity: 0;
+    background: red;
+    border-radius: 50%;
+    width: 10px;
+    height:  10px;
+    position: absolute;
+    top:5px;
+    right: -10px;
+}
+#cuerpo_chat{
+    display: block;
+    background: #979B9E;
+    width: 100%;
+    height: 75%;
+    border-bottom-left-radius:  15px;
+    overflow-y:scroll;
+}
+.mostrarchat{
+    cursor: pointer;
+}
+.mostrarchat:hover{
+    background: rgb(124, 127, 129);
+    cursor: pointer;
+}
+.colChat,.mostrarchat{
+    display: block;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+#linea{
+    display: inline-block;
+    border-bottom: 1px solid #48494B;
+    height: 2px;
+    margin: 0;
+    margin-left: 5%;
+    width: 90%;
+    padding: 0;
+}
+.imgChat{
+    cursor: pointer;
+    width: 20px;
+    float: right;
+    margin-right: 10px;
+}
+.icono_chat_personas{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+/*Scroll*/
+#cuerpo_chat::-webkit-scrollbar,#cuerpo_chat_perosnas_chat::-webkit-scrollbar{
+    cursor: pointer;
+    width: 10px;
+}
+#cuerpo_chat::-webkit-scrollbar-track,#cuerpo_chat_perosnas_chat::-webkit-scrollbar-track {
+    cursor: pointer;
+    background: transparent;
+}
+#cuerpo_chat::-webkit-scrollbar-thumb,#cuerpo_chat_perosnas_chat::-webkit-scrollbar-thumb{
+    cursor: pointer;
+    background: white;
+    border-radius: 10px;
+}
+#cuerpo_chat::-webkit-scrollbar-thumb:hover,#cuerpo_chat_perosnas_chat::-webkit-scrollbar-thumb:hover{
+    cursor: pointer;
+    background: lightgray;
+    border-radius: 10px;
+}
+#cuerpo_chat_cabecera{
+    text-align: center;
+    font-family:"Hyperspace";
+    overflow: hidden;
+    color: white;
+    font-size: 1.2em;
+    max-width: 200px;
+}
+.icono_chat_personaHablas{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    float: left;
+    margin-left: 20px;
+    margin-top: 4px;
+}
+#cuerpo_chat_perosnas_chat{
+    font-family:"Hyperspace_Blod";
+    background: #979B9E;
+    height: 80%;
+    overflow-y: scroll;
+    width: 100%;
+}
+#pie_chat_perosnas_chat{
+    background: #434953;
+    height: 20%;
+    width: 100%;
+}
+#enviar_img{
+    width: 10%;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-right: 1.5%;
+    margin-top: 1.5%;
+    float: right;
+}
+#mensaje_chat{
+    font-family:"Hyperspace_Blod";
+    margin-left: 14px;
+    height: 70%;
+    width: 80%;
+    margin-top: 1.5%;
+    border-radius: 40px;
+    border: solid transparent;
+    padding-left:10px;
+}
+#mensaje_chat:focus,#mensaje_chat:hover{
+    border: solid transparent ;
+    outline:none;
+}
+#cuerpo_chat_perosnas_chat #hora{
+    color: #164499; /*#164499*/
+    font-size: 0.65em;
+    padding-left: 7px;
+    position: relative;
+    bottom: -5px;
+}
+.remi{
+    font-family:"Hyperspace_Blod";
+    color:black;
+    display:block;
+    text-align:right;
+    background-color:#8bd681;
+    max-width:80%;
+    float: right;
+    clear: both;
+    margin-right:2%;
+    margin-top:2%;
+    border-radius:10px;
+    padding:2%;
+}
+.desti{
+    font-family:"Hyperspace_Blod";
+    color:black;
+    display:block;
+    text-align:left;
+    background-color:#7abdeb;
+    max-width:80%;
+    float: left;
+    clear: both;
+    margin-left:2%;
+    margin-top:2%;
+    border-radius:10px;
+    padding:2%;
+}
+#popUp{
+    font-family:"Hyperspace_Blod";
+    position: absolute;
+    z-index: 100;
+    top:40%;
+    left: 45%;
+    padding: 10px;
+    border: white 2px solid;
+    border-radius: 20px;
+    color: black;
+}
+#camara{
+    border-radius: 50%;
+    background-color: white;
+    border: 5px solid gray;
+    height: 40px;
+    position: absolute;
+    top:70px;
+    left: 205px;
+}
+#fondoBlanco{
+    height: 100vh;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    background: white;
+    opacity: 0.7;
+}
+#menuImagenesDrop{
+    border: solid 2px transparent;
+    height: 70vh;
+    width: 80%;
+    position: absolute;
+    display: grid;
+    grid-template-rows: 150px auto 70px;
+    top:15vh;
+    left: 10%;
+    background: white;
+    -webkit-box-shadow: 0px 0px 0px 2px rgba(176,174,176,1);
+    -moz-box-shadow: 0px 0px 0px 2px rgba(176,174,176,1);
+    box-shadow: 0px 0px 0px 2px rgba(176,174,176,1);
+}
+#cerrarMenuImagenesDrop{
+    float: right;
+    padding: 20px;
+    cursor: pointer;
+}
+#gallery *{
+    height: 200px;
+    margin: 20px;
+    user-select: none;
+}
+#menuImagenesDrop h1{
+    display: inline-block;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-size: 1.5em;
+    text-align: left;
+    color: black;
+    font-family:"Hyperspace_Blod";
+}
+#menuImagenesDrop #nav{
+    font-family:"Hyperspace_Blod";
+    padding-left: 20px;
+    padding-bottom: 20px;
+    -webkit-box-shadow: 0px 10px 10px -10px rgba(176,174,176,1);
+    -moz-box-shadow: 0px 10px 10px -10px rgba(176,174,176,1);
+    box-shadow: 0px +10px 10px -10px rgba(176,174,176,1);
+}
+#menuImagenesDrop span{
+    cursor: pointer;
+    font-family:"Hyperspace_Blod";
+    margin-right: 10px;
+    padding: 20px;
+}
+#menuImagenesDrop span:focus{
+    padding: 20px;
+    border-bottom: royalblue 2px solid;
+}
+#menuImagenesDrop span:hover{
+    padding: 20px;
+    border-bottom: royalblue 2px solid;
+}
+#pieMenuImagenesDrop{
+    border-top: rgb(197, 193, 193) solid 1px;
+    display: flex;
+    align-items: center;
+}
+#elegiMenuImagenesDrop{
+    margin-left: 20px;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    background: royalblue;
+    border: 1px solid blue;
+    color: white;
+    font-family:"Hyperspace_Blod";
+}
+#cancelMenuImagenesDrop{
+    cursor: pointer;
+    margin-left: 20px;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid gray;
+    background: rgb(175, 181, 187);
+    font-family:"Hyperspace_Blod";
+}
+#cancelMenuImagenesDrop:hover{
+    background: rgb(114, 121, 128);
+}
+#cuerpoMenuImagenesDrop img{
+    height: 90px;
+}
+#cuerpoMenuImagenesDrop h2{
+    font-family:"Hyperspace_Blod";
+    color: gray;
+    font-size: 1.5em;
+}
+#cuerpoMenuImagenesDrop h3{
+    font-family:"Hyperspace_Blod";
+    color: gray;
+    font-size: 1.3em;
+}
+#selectCuerpoMenuImagenesDrop{
+    cursor: pointer;
+    margin-left: 20px;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid gray;
+    background: rgb(175, 181, 187);
+    font-family:"Hyperspace_Blod";
+}
+#selectCuerpoMenuImagenesDrop:hover{
+    background: rgb(114, 121, 128);
+}
+#cuerpoMenuImagenesDrop{
+    cursor: pointer;
+    text-align: center;
+    overflow: auto;
+}
+#progress-bar{
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 60%;
+}
+#progress-bar[value] {
+    /* Reset the default appearance */
+    -webkit-appearance: none;
+     appearance: none;
+  }
+  #progress-bar[value]::-webkit-progress-value {
+    background-image:
+         -webkit-linear-gradient(-45deg, 
+                                 transparent 33%, rgba(0, 0, 0, .1) 33%, 
+                                 rgba(0,0, 0, .1) 66%, transparent 66%),
+         -webkit-linear-gradient(top, 
+                                 rgba(255, 255, 255, .25), 
+                                 rgba(0, 0, 0, .25)),
+         -webkit-linear-gradient(left, #09c, #f44);
+  
+        border-radius: 15px; 
+        background-size: 35px 20px, 100% 100%, 100% 100%;
+        -webkit-animation: animate-stripes 5s linear infinite;
+        animation: animate-stripes 5s linear infinite;
+  }
+@-webkit-keyframes animate-stripes {
+    100% { background-position: -100% 0px; }
+}
+ 
+@keyframes animate-stripes {
+    100% { background-position: -100% 0px; }
+}
+#progress-bar[value]::-webkit-progress-value::before {
+    content: '80%';
+    position: absolute;
+    right: 0;
+    top: -125%;
+}
+#progress-bar[value]::-webkit-progress-value::after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    border-radius: 100%;
+    right: 7px;
+    top: 7px;
+    background-color: white;
+}
+#cuerpoMenuImagenesDrop{
+    position: relative;
+    cursor: auto;
+}
+#selectFotoDiv {
+    display:inline-block ;
+    cursor: pointer;
+    border: 1px solid transparent;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom:20px;
+}
+#selectFotoDiv img{
+    width: 190px;
+    height: 150px;
+}
+#selectFotoDiv  #tickImagenesDrop{
+    visibility: hidden;
+    position: relative;
+    top: -60px;
+    left: -190px;
+    margin-top: 10px;
+    height: 20px;
+    width: 20px;
+}
+#imagenesForm{
+    display: none;
+}
+#imgTop10{
+    height:30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 10px;float: left;
+}
+.contenidoLogros::-webkit-scrollbar {
+    cursor: pointer;
+    width: 10px;
+    margin-left: 2px;
+}
+.contenidoLogros::-webkit-scrollbar-track {
+    cursor: pointer;
+    background: black;
+}
+.contenidoLogros::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background: white;
+    border-radius: 10px;
+}
+.contenidoLogros::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+    background: lightgray;
+    border-radius: 10px;
+  }
+.contenidoLogros{
+    width: 100%;
+    overflow-y: auto;
+    max-height:81vh;
+}
+.contenidoLogros .unLogro{
+    position: relative;
+    display: grid;
+    grid-template-columns: 100px 3fr 1fr 1fr;
+    margin-top: 30px;
+    color: white;
+    background: #7171717a;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 5px;
+}
+.contenidoLogros .unLogro h1{
+    display: none;
+}
+.unLogro #monedasLogros{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+.unLogro #monedasLogros *{
+    margin-left: 10px;
+}
+.unLogro #fechaLogros{
+    display: grid;
+    align-items: center;
+}.unLogro #textoLogros{
+    width: 100%;
+    display: grid;
+    align-items: start;
+}
+.unLogro #textoLogros progress{
+    width: 100%;
+    max-width: 321px;
+}
+#imgLogo{
+    height: 80px;
+    width: 80px;
+    margin-top: 2px;
+    
+    border-radius: 10px;
+}
+@media (max-height:789px){
+    .contenidoLogros{
+        width: 100%;
+        overflow-y: auto;
+        max-height:79vh;
+    }
+}
+@media (max-height:678px){
+    .contenidoLogros{
+        width: 100%;
+        overflow-y: auto;
+        max-height:76vh;
+    }
+}
+h1.si{
+    font-size: 2.5em;
+    position: absolute;
+    width: 100%;
+    color: black;
+    background: white;
+    opacity: 0.80;
+    height: 100%;
+    padding: 20px;
+}
+body.logros{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+span#monedas{
+    position: absolute;
+    overflow-x: hidden;
+}
+/* Ajuastes */
+#bodySettings{
+    width: 95%;
+    margin: 2.5%;
+    overflow-y: auto;
+}
+#bodySettings *{
+    color: white;
+}
+#bodySettings h2{
+    color: white;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+#bodySettings .tipo{
+    background: rgba(0, 125, 174, 0.795);
+    border-radius: 10px;
+    margin-bottom: 35px;
+    padding: 20px;
+    padding-left: 30px;
+}
+.tipo .opcion{
+    margin-left: 4%;
+    margin-bottom: 20px;
+}
+#bodySettings .tipo .opcion input{
+    width: 200px;
+    text-align: center;
+    color: black;
+    float: right;
+    border: solid 3px transparent;
+}
+#bodySettings .tipo .opcion input:hover{
+    border: solid 3px black;
+}
+.tipo .opcion span{
+    display: inline-block;
+}

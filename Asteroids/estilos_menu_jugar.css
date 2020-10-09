@@ -1,0 +1,201 @@
+body{background-color:black ;
+    user-select: none;
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+#MyCanvas{
+    display: block;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.5;
+}
+@font-face {
+    font-family: "Hyperspace";
+    src: url("fonts/una/Hyperspace Bold.otf");
+    
+}
+@font-face {
+    font-family: "Hyperspace_Blod";
+    src: url("fonts/dos/zrnic___.ttf");
+}
+
+.container-fluid{
+    height: 96%;
+    width: 96%;
+    margin:  2%;
+}
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-family:"Hyperspace";
+}
+.Head_PTS{
+    width: fit-content;
+    margin: 0 ;
+    position: relative;
+}
+.Head_PTS_Puntuaciones{
+    width: fit-content;
+    margin: 0 auto ;
+    position: relative;
+}
+.Head_PTS_Puntuaciones h1{
+    font-family:"Hyperspace";
+    color: white;
+    font-size: 3.5em;
+    margin-top: 0;
+    text-align: left;
+}
+.Head_PTS h1{
+    cursor: pointer;
+    font-family:"Hyperspace";
+    color: white;
+    font-size: 2.5em;
+    margin-top: 0;
+    text-align: left;
+}
+h3{
+    font-family:"Hyperspace";
+    color: white; 
+    font-size: 2.5em;
+}
+.Inicio_Sesion{
+    float: right;
+    
+}
+.Inicio_Sesion img.logo{
+    border-radius: 50%;
+    display: inline;
+    height: 100px;
+    width: 100px;
+}
+.Inicio_Sesion .Usuario{
+    color:yellow;
+    font-size: 2em;
+    text-align: right;
+    display: inline;
+}
+#head span{
+    position: relative;
+    transition: all 0.25s ease-out;
+}
+#head span:hover{
+    letter-spacing: 5px;
+}
+#head span:after{
+    content:'';
+    background-color: white;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.25s ease-out;
+    transform-origin: center;
+    transform: scaleX(0);
+}
+#head span:hover:after{
+    transform: scaleX(1);
+}
+.cuepo{
+    margin-top: 50px;
+    max-height: 75vh;
+    overflow-y: auto;
+    overflow-x:hidden
+}
+.cuepo h1{
+    font-family:"Hyperspace";
+    color: white;
+    font-size: 2.5em;
+    border-bottom: solid 1px white;
+    border-left: solid 1px white;
+    border-right: solid 1px white;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+}
+.amuneta{
+    height: 180px;
+    display: grid;
+    align-items: center;
+}
+.boton{
+    cursor: pointer;
+    border-radius: 25px;
+    margin: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family:"Hyperspace";
+    color: black;
+    background: rgb(255, 255, 255);
+    font-size: 1.75em;
+    height: 120px;
+    display: grid;
+    grid-template-columns: 200px auto;
+    align-items: center;
+    transition: 0.15s all ease-in;
+    
+}
+.boton:hover{
+    height: 140px;
+}
+
+.btnBlokeadoInicioSesion{
+    cursor: pointer;
+    border-radius: 25px;
+    margin: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family:"Hyperspace";
+    color: black;
+    background: gray;
+    font-size: 1.75em;
+    height: 120px;
+    display: grid;
+    grid-template-columns: 200px auto;
+    align-items: center;
+    transition: 0.15s all ease-in;
+}
+.video{
+    border-radius: 100%;
+    height: 100px;
+    margin-left: 40px;
+    transition: 0.15s all ease-in;
+}
+.cuepo #titulo{
+    margin-left: 35%;
+    font-size: 1.75em;
+    transition: 0.15s all ease-in;
+}
+.uniseSala{
+    border: solid 1px white;
+    border-radius: 25px;
+    text-align: center;
+    margin-left: 3%;
+    float: left;
+    width: 45%;
+    height: 75vh;
+}
+.crearSala{
+    border: solid 1px white;
+    border-radius: 25px;
+    margin-left: 3%;
+    text-align: center;
+    float: left;
+    width: 45%;
+    height: 75vh;
+}
+#popUp{
+    font-family:"Hyperspace_Blod";
+    position: absolute;
+    z-index: 100;
+    top:40%;
+    left: 45%;
+    padding: 10px;
+    border: white 2px solid;
+    border-radius: 20px;
+    color: black;
+}
